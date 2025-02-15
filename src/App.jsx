@@ -21,17 +21,25 @@ import PostVideo from './Pages/PostVideo'
 
 function App() {
   const[showNav ,setShowNav] = useState(false);
+  
   const navHandler=()=>{
-    setShowNav(!showNav)
+    setShowNav((prev) => !prev);
+    // console.log(`clicked button ${showNav}`)
   }
+  const closeNav = () => {
+    setShowNav(false);
+    // console.log(`clicked div ${showNav}`)
+
+  };
 
   return (
     <section className='flex'>
       <div className='lg:w-[17%]'>
         <Sidebar view={showNav} viewNav={navHandler}/>
       </div>
-      <div className='lg:w-[83%] ' onClick={()=>navHandler()}>
-        <SearchNavbar viewNav={navHandler} view={showNav}/>
+      <div className='lg:w-[83%] '>
+        <SearchNavbar viewNav={navHandler} />
+        <div onClick={closeNav}>
         <Routes>
           <Route path='/Manage-New-Headline'element={<ManageHeadline/>}/>
           <Route path='/Manage-New-Article' element={<ManageArticle/>}/>
@@ -42,6 +50,7 @@ function App() {
 
 
         </Routes>
+        </div>
         <Footer/>
       </div>
       {/* <ResetPassword />

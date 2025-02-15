@@ -5,6 +5,7 @@ import message from '../../../assets/searchBarIcon/messageIcon.png'
 import hamburger from '../../../assets/searchBarIcon/hamburger.png'
 
 const SearchNavbar = ({viewNav}) => {
+    
   return (
         <div className='lg:w-[83%] py-2 shadow-lg lg:fixed top-0 bg-white flex items-center'>
             <div className='pl-4 lg:hidden'><button className=' bg-[#1C2059] rounded-sm w-8 p-2' onClick={()=>viewNav()}><img src={hamburger} alt="" className='w-8 invert'/></button></div>
