@@ -23,17 +23,17 @@ const Sidebar = ({view}) => {
   }
   return (
     <>
-      <div className="md:hidden lg:block flex flex-col lg:h-screen md:h-200 w-[17%] bg-[#1C2059] text-white items-center md:pt-20 lg:pt-30 fixed left-0">
+      <div className="hidden lg:block flex flex-col lg:h-screen md:h-200 w-[17%] bg-[#1C2059] text-white items-center md:pt-20 lg:pt-30 fixed left-0">
         <div className=" w-full pb-3">
-          <div
-            href="dashbord"
+          <Link
+            to="/dashboard"
             className="hover:bg-[#FFAC06] flex flex-row mt-4 px-5 py-2"
           >
             <span className="mr-4">
               <img src={dashboardIcon} alt="dashboard Icon" />
             </span>
             Dashboard
-          </div>
+          </Link>
 
           <div
             className={`hover:bg-[#FFAC06] flex flex-row mt-4 px-5 py-2  ${

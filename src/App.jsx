@@ -20,6 +20,7 @@ import ManageVideo from './Pages/Management/ManageVideo'
 import PostNewHeadline from './Pages/New/PostNewHeadline'
 import Profile from './Pages/Profile'
 import Notification from './Pages/Notification'
+import Dashboard from './Pages/Dashboard/Dashboard'
 
 
 
@@ -41,12 +42,14 @@ function App() {
       <div className='lg:w-[17%]'>
         <Sidebar view={showNav} viewNav={navHandler}/>
       </div>
-      <div className='lg:w-[83%] '>
+      <div className='lg:w-[83%]'>
         <SearchNavbar viewNav={navHandler} />
         <div onClick={closeNav}>
         <Routes>
           <Route path='/notification'element={<Notification/>}/>
-          
+
+          <Route path='/dashboard'element={<Dashboard/>}/>
+
           <Route path='/Manage-New-Headline'element={<ManageHeadline/>}/>
           <Route path='/Manage-New-Article' element={<ManageArticle/>}/>
           <Route path='/Manage-Video' element={<ManageVideo/>}/>
