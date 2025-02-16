@@ -1,10 +1,11 @@
 import { useState } from "react";
+import SettingsHistory from './SettingComponents/SearchHistory'
 import Faq from "./SettingComponents/Faq";
 import TermsAndConditions from "./SettingComponents/TermsAndConditions";
 
 const FAQ = () => <Faq />;
 const TermsAndCondition = () => <TermsAndConditions />;
-const General = () => <div className="p-4">This is the General information section.</div>;
+const General = () => (<SettingsHistory/>);
 
 const TabComponent = () => {
   const [activeTab, setActiveTab] = useState("FAQ");

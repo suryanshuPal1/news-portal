@@ -15,7 +15,7 @@ const SearchNavbar = ({viewNav}) => {
                 <div className='flex items-center'>
                     <span><img src={message} alt="" /></span>
                     <Link to='/notification' ><img src={bellIcon} alt="" className='px-3'/></Link>
-                    <span><img src={profileIcon} alt="" className='w-8'/></span>
+                    <Link to='/profile'><img src={profileIcon} alt="" className='w-8'/></Link>
                 </div>
             </div>
         </div>
