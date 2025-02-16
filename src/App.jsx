@@ -16,6 +16,7 @@ import { useState } from 'react'
 
 import PostNewArticle from './Pages/PostNewArticle'
 import PostVideo from './Pages/PostVideo'
+import ManageVideo from './Pages/Management/ManageVideo'
 
 
 
@@ -43,6 +44,7 @@ function App() {
         <Routes>
           <Route path='/Manage-New-Headline'element={<ManageHeadline/>}/>
           <Route path='/Manage-New-Article' element={<ManageArticle/>}/>
+          <Route path='/Manage-Video' element={<ManageVideo/>}/>
           <Route path='/setting' element={<Setting/>}/>
          
           <Route path='/Post-New-Article' element={<PostNewArticle/>}/>
