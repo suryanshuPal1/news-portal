@@ -1,22 +1,25 @@
 import { Routes,Route } from 'react-router-dom'
 import './App.css'
-import AccountVerification from './Pages/AccountVerification'
-import EmailVerification from './Pages/EmailVerification'
-import ResetPassword from './Pages/ResetPassword'
-import ResetPasswordSuccess from './Pages/ResetPasswordSuccess'
+import AccountVerification from './Pages/AuthPages/AccountVerification'
+import EmailVerification from './Pages/AuthPages/EmailVerification'
+import ResetPassword from './Pages/AuthPages/ResetPassword'
+import ResetPasswordSuccess from './Pages/AuthPages/ResetPasswordSuccess'
 import Sidebar from './components/Password/Sidebar/Sidebar'
 import SearchNavbar from './components/Password/Sidebar/SearchNavbar'
 import Setting from './Pages/Setting'
 
-import ManageHeadline from './Pages/ManageHeadline'
-import ManageArticle from './Pages/ManageArticle'
+import ManageHeadline from './Pages/Management/ManageHeadline'
+import ManageArticle from './Pages/Management/ManageArticle'
 import Footer from './components/footer'
 
 import { useState } from 'react'
 
-import PostNewArticle from './Pages/PostNewArticle'
-import PostVideo from './Pages/PostVideo'
+import PostNewArticle from './Pages/New/PostNewArticle'
+import PostVideo from './Pages/New/PostVideo'
 import ManageVideo from './Pages/Management/ManageVideo'
+import PostNewHeadline from './Pages/New/PostNewHeadline'
+import Profile from './Pages/Profile'
+import Notification from './Pages/Notification'
 
 
 
@@ -42,11 +45,16 @@ function App() {
         <SearchNavbar viewNav={navHandler} />
         <div onClick={closeNav}>
         <Routes>
+          <Route path='/notification'element={<Notification/>}/>
+          
           <Route path='/Manage-New-Headline'element={<ManageHeadline/>}/>
           <Route path='/Manage-New-Article' element={<ManageArticle/>}/>
           <Route path='/Manage-Video' element={<ManageVideo/>}/>
+
+          <Route path='/profile' element={<Profile/>}/>
           <Route path='/setting' element={<Setting/>}/>
          
+          <Route path='/Post-New-Headline' element={<PostNewHeadline/>}/>
           <Route path='/Post-New-Article' element={<PostNewArticle/>}/>
           <Route path='/Post-Video' element={<PostVideo/>}/>
 

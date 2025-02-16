@@ -1,6 +1,6 @@
 import React from 'react'
-import thumbnail from '../assets/manage/thumbnail.png'
-import editIcon from '../assets/manage/editIcon.png'
+import thumbnail from '../../assets/manage/thumbnail.png'
+import editIcon from '../../assets/manage/editIcon.png'
 
 const ManageHeadline = () => {
   return (

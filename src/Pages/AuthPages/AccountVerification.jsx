@@ -1,8 +1,8 @@
 import React from "react";
-import img from "../Assets/amico@2x.png";
-import edit from "../Assets/edit-text.png";
-import call from "../Assets/call.png";
-import email from "../Assets/email.png";
+import img from "../../assets/amico@2x.png";
+import edit from "../../assets/edit-text.png";
+import call from "../../assets/call.png";
+import email from "../../assets/email.png";
 
 const AccountVerification = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import emailposter from '../Assets/emailPoster.png';
+import emailposter from '../../assets/emailPoster.png';
 
 const EmailVerification = () => {
   return (

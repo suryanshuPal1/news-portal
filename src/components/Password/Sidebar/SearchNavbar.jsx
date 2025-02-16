@@ -3,6 +3,7 @@ import  profileIcon from '../../../assets/searchBarIcon/Ellipse.png'
 import bellIcon from '../../../assets/searchBarIcon/bellIcon.png'
 import message from '../../../assets/searchBarIcon/messageIcon.png'
 import hamburger from '../../../assets/searchBarIcon/hamburger.png'
+import { Link } from 'react-router-dom'
 
 const SearchNavbar = ({viewNav}) => {
     
@@ -13,7 +14,7 @@ const SearchNavbar = ({viewNav}) => {
                 <input type="text" placeholder='Search' className='border border-gray-200 rounded px-3 py-1 w-[35%]'/>
                 <div className='flex items-center'>
                     <span><img src={message} alt="" /></span>
-                    <span><img src={bellIcon} alt="" className='px-3'/></span>
+                    <Link to='/notification' ><img src={bellIcon} alt="" className='px-3'/></Link>
                     <span><img src={profileIcon} alt="" className='w-8'/></span>
                 </div>
             </div>

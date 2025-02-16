@@ -1,6 +1,6 @@
 import React from 'react'
-import thumbnail from '../assets/manage/articleImage.png'
-import editIcon from '../assets/manage/editIcon.png'
+import thumbnail from '../../assets/manage/articleImage.png'
+import editIcon from '../../assets/manage/editIcon.png'
 
 const ManageArticle = () => {
   return (
