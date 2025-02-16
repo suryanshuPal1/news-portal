@@ -23,7 +23,7 @@ const Sidebar = ({view}) => {
   }
   return (
     <>
-      <div className="hidden lg:block flex flex-col lg:h-screen md:h-200 w-[17%] bg-[#1C2059] text-white items-center md:pt-20 lg:pt-30 fixed left-0">
+      <div className="md:hidden lg:block flex flex-col lg:h-screen md:h-200 w-[17%] bg-[#1C2059] text-white items-center md:pt-20 lg:pt-30 fixed left-0">
         <div className=" w-full pb-3">
           <div
             href="dashbord"
@@ -261,5 +261,3 @@ const Sidebar = ({view}) => {
 }
 
 export default Sidebar;
-
-
