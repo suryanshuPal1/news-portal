@@ -135,7 +135,7 @@ const Sidebar = ({view}) => {
         </div>
         <div className="border-t lg:w-[90%] sm:w-[100%] p-3 sm:h-25">
           <div className="flex flex-row py-5">
-            <img src={profile} alt="profile" className='sm:h-12'/>
+            <Link to='/profile'><img src={profile} alt="profile" className='sm:h-12'/></Link>
             <div className="pl-2  sm:h-3">
               <p className=' lg:text-sm text-xs'>News Paper</p>
               <p className="text-xs bg-[#FFCD71] text-black border rounded-lg lg:my-3 lg:p-1 pl-1">
@@ -239,7 +239,7 @@ const Sidebar = ({view}) => {
           </div>
           <div className="border-t w-[90%]">
             <div className="flex flex-row py-5">
-              <img src={profile} alt="" />
+              <img src={profile} alt="profile" />
               <div className="pl-2">
                 <h2>News Paper</h2>
                 <p className="text-xs bg-[#FFCD71] text-black border rounded-lg pl-1">
