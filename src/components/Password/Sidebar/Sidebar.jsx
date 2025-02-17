@@ -11,6 +11,7 @@ import setting from '../../../assets/Dashboard Icon/setting.png'
 import profile from '../../../assets/searchBarIcon/Ellipse.png'
 import logout from '../../../assets/Dashboard Icon/logout.png'
 
+
 const Sidebar = ({view}) => {
   const [ dropManage,setDropManage] = useState(false);
   const [dropNew,setDropNew] = useState(false);
@@ -23,7 +24,7 @@ const Sidebar = ({view}) => {
   }
   return (
     <>
-      <div className="hidden lg:block flex flex-col lg:h-screen md:h-200 w-[17%] bg-[#1C2059] text-white items-center md:pt-20 lg:pt-30 fixed left-0">
+      <div className="hidden lg:block fixed flex h-screen flex-col w-[17%] bg-[#1C2059] text-white items-center lg:pt-30 pt-20 left-0">
         <div className=" w-full pb-3">
           <Link
             to="/dashboard"
