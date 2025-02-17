@@ -38,7 +38,7 @@ function App() {
   };
 
   return (
-    <section className='flex'>
+    <section className='lg:flex'>
       <div className='lg:w-[17%]'>
         <Sidebar view={showNav} viewNav={navHandler}/>
       </div>
