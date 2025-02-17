@@ -155,7 +155,7 @@ const Sidebar = ({view}) => {
         <div className="fixed bg-[#1C2059] text-white h-250 z-100 pt-20 p-4 lg:hidden">
           <div className=" w-full pb-3">
             <Link
-              to="dashbord"
+              to="dashboard"
               className="hover:bg-[#FFAC06] flex flex-row mt-4 px-5 py-2"
             >
               <span className="mr-4">
