@@ -10,6 +10,8 @@ import profileIcon from '../../assets/Dashboard Icon/profile.png'
 import setting from '../../assets/Dashboard Icon/setting.png'
 import profile from '../../assets/searchBarIcon/Ellipse.png'
 import logout from '../../assets/Dashboard Icon/logout.png'
+import dropleft from '../../assets/Dashboard Icon/dropleft.png'
+import dropdown from '../../assets/Dashboard Icon/dropdown.png'
 
 
 const Sidebar = ({view}) => {
@@ -36,32 +38,32 @@ const Sidebar = ({view}) => {
             Dashboard
           </Link>
 
-          <div
-            className={`hover:bg-[#FFAC06] flex flex-row mt-4 px-5 py-2  ${
-              dropNew ? "bg-[#FFAC06]" : "bg-white-0"
-            }`}
-            onClick={() => dropNewHandler()}
-          >
+          <div className={`hover:bg-[#FFAC06] flex flex-row mt-4 px-5 py-2  ${
+              dropNew ? "bg-[#FFAC06]" : "bg-white-0"}`} onClick={() => dropNewHandler()}>
             <span className="mr-4">
               <img src={newIcon} alt="" />
             </span>
             New
+            <span className='mt-2 lg:ml-[45%]'>{dropNew ? (<img src={dropdown} alt=""/>) : (<img src={dropleft} alt=""/>)}</span>
           </div>
           {dropNew && (
-            <div className="flex flex-col pl-13 text-sm ">
-              <Link
-                to={"/Post-New-Headline"}
-                className="hover:text-[#FFAC06] mt-2"
-              >
+            <div className="flex flex-col ml-13 text-sm  justify-center ">
+              <Link to={"/Post-New-Headline"} className="flex flex-row hover:text-[#FFAC06] mt-2">
+                <span className="mr-3"><img src={manageNewHeadlineIcon} alt=""
+                    className="hover:text-[#FFAC06]"/>
+                </span>
                 Post New Headline
               </Link>
-              <Link
-                to={"/Post-New-Article"}
-                className="hover:text-[#FFAC06] mt-2"
-              >
+              <Link to={"/Post-New-Article"} className="flex flex-row hover:text-[#FFAC06] mt-2" >
+              <span className="mr-3">
+                  <img src={manageNewarticleIcon} alt="" />
+                </span>
                 Post New Article/Post
               </Link>
-              <Link to={"/Post-Video"} className="hover:text-[#FFAC06] mt-2">
+              <Link to={"/Post-Video"} className="flex flex-row hover:text-[#FFAC06] mt-2">
+              <span className="mr-3">
+                  <img src={manageVideoIcon} alt="" />
+                </span>
                 Post Video
               </Link>
             </div>
@@ -71,12 +73,10 @@ const Sidebar = ({view}) => {
             className={`hover:bg-[#FFAC06] flex flex-row mt-4  px-5 py-2 ${
               dropManage ? "bg-[#FFAC06]" : "bg-white-0"
             }`}
-            onClick={() => dropManageHandler()}
-          >
-            <span className="mr-4">
-              <img src={manageIcon} alt="" />
-            </span>
+            onClick={() => dropManageHandler()}>
+            <span className="mr-4"><img src={manageIcon} alt="" /></span>
             Manage
+            <span className='mt-2 lg:ml-[33%] '>{dropManage ? (<img src={dropdown} alt=""/>) : (<img src={dropleft} alt=""/>)}</span>
           </div>
           {dropManage && (
             <div className="flex flex-col pl-13 text-sm">
@@ -84,12 +84,8 @@ const Sidebar = ({view}) => {
                 to={"/Manage-New-Headline"}
                 className="flex flex-row hover:text-[#FFAC06] mt-2"
               >
-                <span className="mr-3">
-                  <img
-                    src={manageNewHeadlineIcon}
-                    alt=""
-                    className="hover:text-[#FFAC06]"
-                  />
+                <span className="mr-3"><img src={manageNewHeadlineIcon} alt=""
+                    className="hover:text-[#FFAC06]"/>
                 </span>
                 Manage New Headline
               </Link>
@@ -153,7 +149,7 @@ const Sidebar = ({view}) => {
         </div>
       </div>
       {view && (
-        <div className="fixed bg-[#1C2059] text-white h-250 z-100 pt-20 p-4 lg:hidden">
+        <div className="fixed h-full bg-[#1C2059] text-white h-250 z-100 pt-20 p-4 lg:hidden w-60">
           <div className=" w-full pb-3">
             <Link
               to="/"
@@ -175,22 +171,32 @@ const Sidebar = ({view}) => {
                 <img src={newIcon} alt="" />
               </span>
               New
+              <span className='mt-2 ml-[45%]'>{dropNew ? (<img src={dropdown} alt=""/>) : (<img src={dropleft} alt=""/>)}</span>
             </div>
             {dropNew && (
               <div className="flex flex-col pl-13 text-sm ">
                 <Link
                   to={"/Post-New-Headline"}
-                  className="hover:text-[#FFAC06] mt-2"
+                  className="flex flex-row hover:text-[#FFAC06] mt-2"
                 >
+                  <span className="mr-3">
+                    <img src={manageNewHeadlineIcon} alt="" className="hover:text-[#FFAC06]"/>
+                  </span>
                   Post New Headline
                 </Link>
                 <Link
                   to={"/Post-New-Article"}
-                  className="hover:text-[#FFAC06] mt-2"
+                  className="flex flex-row hover:text-[#FFAC06] mt-2"
                 >
+                  <span className="mr-3">
+                    <img src={manageNewarticleIcon} alt="" className="hover:text-[#FFAC06]"/>
+                  </span>
                   Post New Article/Post
                 </Link>
-                <Link to={"/Post-Video"} className="hover:text-[#FFAC06] mt-2">
+                <Link to={"/Post-Video"} className="flex flex-row hover:text-[#FFAC06] mt-2">
+                <span className="mr-3">
+                    <img src={manageVideoIcon} alt="" className="hover:text-[#FFAC06]"/>
+                  </span>
                   Post Video
                 </Link>
               </div>
@@ -202,6 +208,7 @@ const Sidebar = ({view}) => {
                 <img src={manageIcon} alt="" />
               </span>
               Manage 
+              <span className='mt-2 ml-[29%]'>{dropNew ? (<img src={dropdown} alt=""/>) : (<img src={dropleft} alt=""/>)}</span>
             </div>
             {dropManage && (
               <div className="flex flex-col pl-13 text-sm">
