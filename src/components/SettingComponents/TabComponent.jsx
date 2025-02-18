@@ -14,7 +14,7 @@ const TabComponent = () => {
     switch (activeTab) {
       case "FAQ":
         return <FAQ />;
-      case "Terms":
+      case "Terms&condition":
         return <TermsAndCondition />;
       case "General":
         return <General />;
@@ -26,7 +26,7 @@ const TabComponent = () => {
   return (
     <div className="mx-auto mt-10 rounded-lg">
       <div className="flex bg-gray-100 p-2 rounded-t-lg w-[100%]">
-        {["General", "FAQ", "Terms"].map((tab) => (
+        {["General", "FAQ", "Terms&condition"].map((tab) => (
           <button
             key={tab}
             className={`flex w-[100%] p-2 justify-center text-center rounded-md transition-all duration-200 ${
@@ -38,7 +38,7 @@ const TabComponent = () => {
           </button>
         ))}
       </div>
-      <div className="bg-zinc-200 p-4">{renderContent()}</div>
+      <div className="bg- p-4">{renderContent()}</div>
     </div>
   );
 };
