@@ -1,6 +1,6 @@
 import React from 'react'
-import Accordian from '../components/Accordian';
-import TabComponent from '../components/TabComponent';
+import Accordian from '../components/accordian/Accordian';
+import TabComponent from '../components/SettingComponents/TabComponent';
 
 const Setting = () => {
   return (

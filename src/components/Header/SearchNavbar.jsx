@@ -1,8 +1,8 @@
 import React from 'react'
-import  profileIcon from '../../../assets/searchBarIcon/Ellipse.png'
-import bellIcon from '../../../assets/searchBarIcon/bellIcon.png'
-import message from '../../../assets/searchBarIcon/messageIcon.png'
-import hamburger from '../../../assets/searchBarIcon/hamburger.png'
+import  profileIcon from '../../assets/searchBarIcon/Ellipse.png'
+import bellIcon from '../../assets/searchBarIcon/bellIcon.png'
+import message from '../../assets/searchBarIcon/messageIcon.png'
+import hamburger from '../../assets/searchBarIcon/hamburger.png'
 import { Link } from 'react-router-dom'
 
 const SearchNavbar = ({viewNav}) => {

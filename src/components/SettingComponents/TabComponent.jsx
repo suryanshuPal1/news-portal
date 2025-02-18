@@ -1,7 +1,7 @@
 import { useState } from "react";
-import SettingsHistory from './SettingComponents/SearchHistory'
-import Faq from "./SettingComponents/Faq";
-import TermsAndConditions from "./SettingComponents/TermsAndConditions";
+import SettingsHistory from './SearchHistory'
+import Faq from "./Faq";
+import TermsAndConditions from "./TermsAndConditions";
 
 const FAQ = () => <Faq />;
 const TermsAndCondition = () => <TermsAndConditions />;

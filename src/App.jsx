@@ -4,13 +4,13 @@ import AccountVerification from './Pages/AuthPages/AccountVerification'
 import EmailVerification from './Pages/AuthPages/EmailVerification'
 import ResetPassword from './Pages/AuthPages/ResetPassword'
 import ResetPasswordSuccess from './Pages/AuthPages/ResetPasswordSuccess'
-import Sidebar from './components/Password/Sidebar/Sidebar'
-import SearchNavbar from './components/Password/Sidebar/SearchNavbar'
+import Sidebar from './components/Sidebar/Sidebar'
+import SearchNavbar from './components/Header/SearchNavbar'
 import Setting from './Pages/Setting'
 
 import ManageHeadline from './Pages/Management/ManageHeadline'
 import ManageArticle from './Pages/Management/ManageArticle'
-import Footer from './components/footer'
+import Footer from './components/footer/Footer'
 
 import { useState } from 'react'
 
@@ -48,7 +48,7 @@ function App() {
         <Routes>
           <Route path='/notification'element={<Notification/>}/>
 
-          <Route path='/dashboard'element={<Dashboard/>}/>
+          <Route path='/'element={<Dashboard/>}/>
 
           <Route path='/Manage-New-Headline'element={<ManageHeadline/>}/>
           <Route path='/Manage-New-Article' element={<ManageArticle/>}/>

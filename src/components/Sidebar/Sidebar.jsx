@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import dashboardIcon from '../../../assets/Dashboard Icon/Vector.png';
-import newIcon from '../../../assets/Dashboard Icon/Group.png' 
-import manageIcon from '../../../assets/Dashboard Icon/manage.png' 
-import manageNewHeadlineIcon from '../../../assets/Dashboard Icon/manage-headline.png' 
-import manageNewarticleIcon from '../../../assets/Dashboard Icon/manage-article.png' 
-import manageVideoIcon from '../../../assets/Dashboard Icon/manage-video.png' 
-import profileIcon from '../../../assets/Dashboard Icon/profile.png'
-import setting from '../../../assets/Dashboard Icon/setting.png'
-import profile from '../../../assets/searchBarIcon/Ellipse.png'
-import logout from '../../../assets/Dashboard Icon/logout.png'
+import dashboardIcon from '../../assets/Dashboard Icon/Vector.png';
+import newIcon from '../../assets/Dashboard Icon/Group.png' 
+import manageIcon from '../../assets/Dashboard Icon/manage.png' 
+import manageNewHeadlineIcon from '../../assets/Dashboard Icon/manage-headline.png' 
+import manageNewarticleIcon from '../../assets/Dashboard Icon/manage-article.png' 
+import manageVideoIcon from '../../assets/Dashboard Icon/manage-video.png' 
+import profileIcon from '../../assets/Dashboard Icon/profile.png'
+import setting from '../../assets/Dashboard Icon/setting.png'
+import profile from '../../assets/searchBarIcon/Ellipse.png'
+import logout from '../../assets/Dashboard Icon/logout.png'
 
 
 const Sidebar = ({view}) => {
@@ -27,7 +27,7 @@ const Sidebar = ({view}) => {
       <div className="!hidden lg:!block lg:flex flex-col lg:h-screen md:h-200 w-[17%] bg-[#1C2059] text-white items-center md:pt-20 lg:pt-30 fixed left-0">
         <div className=" w-full pb-3">
           <Link
-            to="/dashboard"
+            to="/"
             className="hover:bg-[#FFAC06] flex flex-row mt-4 px-5 py-2"
           >
             <span className="mr-4">
@@ -156,7 +156,7 @@ const Sidebar = ({view}) => {
         <div className="fixed bg-[#1C2059] text-white h-250 z-100 pt-20 p-4 lg:hidden">
           <div className=" w-full pb-3">
             <Link
-              to="dashboard"
+              to="/"
               className="hover:bg-[#FFAC06] flex flex-row mt-4 px-5 py-2"
             >
               <span className="mr-4">
